@@ -29,16 +29,3 @@ func (s *StubDetails) CreateStub() {
 	}
 	template.Execute(f, s.Values)
 }
-
-func main() {
-	stub := StubDetails{
-		Name:        "./stubs/model.go.stub",
-		FileName:    "model.go",
-		Destination: "./",
-		Values: map[string]string{
-			"Model": "User",
-		},
-	}
-
-	stub.CreateStub()
-}
