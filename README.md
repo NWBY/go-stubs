@@ -18,7 +18,7 @@ type {{.Model}} struct {
 ```
 
 Define a `StubDetails` struct and then that stub using `CreateStub`:
-```
+```go
 stub := StubDetails{
     Name:        "./stubs/model.go.stub",
     FileName:    "model.go",
